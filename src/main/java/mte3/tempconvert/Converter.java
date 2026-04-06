@@ -17,15 +17,20 @@ public class Converter {
         
         try(Scanner scanner = new Scanner(System.in)) {
             System.out.print("Please enter temperature (for conversion): ");
+            double temp = scanner.nextDouble();
 
             // (part 1) conversion from C to F
             
             
             // (part 2) conversion from F to C
+            class fToC{
+                double temp2 = temp;
+                temp2 = ((temp2-32)*(5/9));
+            }
             
             
             // (part 3) conversion from F to K
-            
+            temp -> ((temp-32)*(5/9)+273.15);
 
 
         }  // try { } block closed
